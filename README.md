@@ -13,7 +13,24 @@
 
 
 
+## ⚡ Quick Deploy (2 Variables Only!)
 
+You only need **2 things** to run this bot:
+
+| Variable | Where to get |
+|----------|--------------|
+| `BOT_TOKEN` | [@BotFather](https://t.me/BotFather) |
+| `OWNER_ID` | [@userinfobot](https://t.me/userinfobot) |
+
+### Optional (For Voice Chat Music):
+| Variable | Where to get |
+|----------|--------------|
+| `STRING_SESSION` | [@StringSessionBot](https://t.me/StringSessionBot) |
+
+> ⚠️ Without STRING_SESSION, bot will work but can't play music in Voice Chats.
+> Bot can still send audio files, search songs, download music etc.
+
+---
 <h2 align="center">
     ─「 𝗩𝗜𝗩𝗘𝗞 𝗠𝗨𝗦𝗜𝗖 」─
 

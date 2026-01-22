@@ -1,5 +1,5 @@
 services:
-  - type: worker
+  - type: web
     name: vivek-music-bot
     env: docker
     dockerfilePath: ./Dockerfile
@@ -8,3 +8,5 @@ services:
         sync: false
       - key: OWNER_ID
         sync: false
+      - key: PORT
+        value: 8080

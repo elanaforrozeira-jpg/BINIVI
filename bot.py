@@ -3,7 +3,6 @@ import asyncio
 from aiohttp import web
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from pyrogram.enums import ParseMode
 import yt_dlp
 
 from config import (
@@ -59,7 +58,7 @@ async def start_server():
 # ═══════════════════════════════════════════════════════════
 
 # Validate BOT_TOKEN
-if not BOT_TOKEN or BOT_TOKEN == "":
+if not BOT_TOKEN:
     print("❌ ERROR: BOT_TOKEN is required!")
     print("👉 Get it from @BotFather on Telegram")
     exit(1)

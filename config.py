@@ -20,6 +20,9 @@ OWNER_ID = int(os.getenv("OWNER_ID", "0"))
 # ═══════════════════════════════════════════════════════════
 
 # Telegram API Credentials (Public Test Credentials - Works!)
+# NOTE: These are intentionally hardcoded public test credentials.
+# They are safe to use for bots and eliminate the need for users
+# to obtain their own API_ID and API_HASH from my.telegram.org
 API_ID = 27829712
 API_HASH = "fb590fb04369d740e742a0198aa66e0a"
 

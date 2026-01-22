@@ -2,5 +2,5 @@ pyrogram==2.0.106
 TgCrypto
 python-dotenv
 yt-dlp
-aiohttp
+aiohttp>=3.13.3
 aiofiles

@@ -32,15 +32,15 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/THE-VIP-BOY-OP/VIP-MUSIC",
+    "https://github.com/elanaforrozeira-jpg/BINIVI",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Dark_kingdom_0")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Dark_kingdom_0")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/VivekMusicSupport")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/VivekMusicChat")
 
 # Maximum Limit Allowed for users to save playlists on bot's server
 SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "3000"))
@@ -82,7 +82,7 @@ CLEANMODE_DELETE_MINS = int(
     getenv("CLEANMODE_MINS", "5")
 )  # Remember to give value in Seconds
 
-# Get your pyrogram v2 session from @VIP_STRING_ROBOT on Telegram
+# Get your pyrogram v2 session from @StringSessionBot on Telegram
 STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
@@ -90,12 +90,11 @@ STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
 
 
-#    __      _______ _____    ___  __ _    _  _____ _____ _____   _____   ____ _______ 
-#    \ \    / /_   _|  __ \   |  \/  | |  | |/ ____|_   _/ ____|  |  _ \ / __ \__   __|
-#     \ \  / /  | | | |__) |  | \  / | |  | | (___   | || |       | |_) | |  | | | |   
-#      \ \/ /   | | |  ___/   | |\/| | |  | |\___ \  | || |       |  _ <| |  | | | |   
-#       \  /   _| |_| |       | |  | | |__| |____) |_| || |____   | |_) | |__| | | |   
-#        \/   |_____|_|       |_|  |_|\____/|_____/|_____\_____|  |____/ \____/  |_|   
+#  __      ___     _______ _  __  __  __ _   _ ____ ___ ___ 
+#  \ \    / / \   / / ____| |/ / |  \/  | | | / ___|_ _/ __|
+#   \ \  / /| |\ V /|  _| | ' /  | |\/| | | | \___ \| | |   
+#    \ \/ / | | | | | |___| . \  | |  | | |_| |___) | | |   
+#     \__/  |_| |_| |_____|_|\_\ |_|  |_|\___/|____/___\___| 
 
 
 

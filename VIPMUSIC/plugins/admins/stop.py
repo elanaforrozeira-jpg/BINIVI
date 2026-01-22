@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from VIPMUSIC import app
-from VIPMUSIC.core.call import VIP
+from VIPMUSIC.core.call import Vivek
 from VIPMUSIC.utils.database import set_loop
 from VIPMUSIC.utils.decorators import AdminRightsCheck
 from VIPMUSIC.utils.inline import close_markup

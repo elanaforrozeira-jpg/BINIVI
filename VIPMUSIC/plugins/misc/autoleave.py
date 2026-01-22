@@ -5,7 +5,7 @@ from pyrogram.enums import ChatType
 
 import config
 from VIPMUSIC import app
-from VIPMUSIC.core.call import VIP, autoend
+from VIPMUSIC.core.call import Vivek, autoend
 from VIPMUSIC.utils.database import get_client, is_active_chat, is_autoend
 
 

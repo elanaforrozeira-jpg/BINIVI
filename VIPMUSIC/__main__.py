@@ -6,7 +6,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from VIPMUSIC import LOGGER, app, userbot
-from VIPMUSIC.core.call import VIP
+from VIPMUSIC.core.call import Vivek
 from VIPMUSIC.misc import sudo
 from VIPMUSIC.plugins import ALL_MODULES
 from VIPMUSIC.utils.database import get_banned_users, get_gbanned

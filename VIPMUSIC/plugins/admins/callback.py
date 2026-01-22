@@ -11,7 +11,7 @@ from VIPMUSIC.utils.database import get_assistant
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from VIPMUSIC import YouTube, app
-from VIPMUSIC.core.call import VIP
+from VIPMUSIC.core.call import Vivek
 from VIPMUSIC.misc import SUDOERS, db
 from VIPMUSIC.utils.database import (
     get_active_chats,

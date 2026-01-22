@@ -4,11 +4,12 @@ import string
 import asyncio
 from pyrogram import client, filters
 from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
+from pyrogram.errors import MessageDeleteForbidden, BadRequest
 from pytgcalls.exceptions import NoActiveGroupCall
 from VIPMUSIC.utils.database import get_assistant
 import config
 from VIPMUSIC import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from VIPMUSIC.core.call import VIP
+from VIPMUSIC.core.call import Vivek
 from VIPMUSIC.misc import SUDOERS
 from VIPMUSIC.utils import seconds_to_min, time_to_seconds
 from VIPMUSIC.utils.channelplay import get_channeplayCB
@@ -82,6 +83,11 @@ async def play_commnd(
         user_command_count[user_id] = 1
         user_last_message_time[user_id] = current_time
 
+    # Auto-delete user command for clean group
+    try:
+        await message.delete()
+    except (MessageDeleteForbidden, BadRequest):
+        pass  # Bot might not have delete permission
 
     await add_served_chat(message.chat.id)
     mystic = await message.reply_text(
@@ -738,7 +744,7 @@ from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from VIPMUSIC import Carbon, YouTube, app
-from VIPMUSIC.core.call import VIP
+from VIPMUSIC.core.call import Vivek
 from VIPMUSIC.misc import db
 from VIPMUSIC.utils.database import add_active_video_chat, is_active_chat
 from VIPMUSIC.utils.exceptions import AssistantErr

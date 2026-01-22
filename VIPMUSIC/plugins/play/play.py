@@ -4,6 +4,7 @@ import string
 import asyncio
 from pyrogram import client, filters
 from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
+from pyrogram.errors import MessageDeleteForbidden, BadRequest
 from pytgcalls.exceptions import NoActiveGroupCall
 from VIPMUSIC.utils.database import get_assistant
 import config
@@ -85,7 +86,7 @@ async def play_commnd(
     # Auto-delete user command for clean group
     try:
         await message.delete()
-    except Exception:
+    except (MessageDeleteForbidden, BadRequest):
         pass  # Bot might not have delete permission
 
     await add_served_chat(message.chat.id)

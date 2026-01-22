@@ -44,13 +44,22 @@ This PR completely replaced the broken codebase with a fresh, secure implementat
 - **No security issues detected**
 
 ## Dependencies Security Status
-All dependencies verified:
+All dependencies verified and updated to secure versions:
 - ✅ pyrogram==2.0.106 - No vulnerabilities
 - ✅ TgCrypto==1.2.5 - No vulnerabilities  
 - ✅ python-dotenv==1.0.1 - No vulnerabilities
-- ✅ yt-dlp==2024.1.1 - No vulnerabilities
-- ✅ aiohttp==3.9.3 - No vulnerabilities
+- ✅ yt-dlp==2024.7.1 - No vulnerabilities (updated from 2024.1.1)
+- ✅ aiohttp==3.13.3 - No vulnerabilities (updated from 3.9.3)
 - ✅ aiofiles==23.2.1 - No vulnerabilities
+
+### Vulnerabilities Fixed
+1. **aiohttp 3.9.3 → 3.13.3**
+   - Fixed: Zip bomb vulnerability (CVE affecting versions <= 3.13.2)
+   - Fixed: DoS vulnerability in malformed POST requests (CVE affecting versions < 3.9.4)
+
+2. **yt-dlp 2024.1.1 → 2024.7.1**
+   - Fixed: File system modification and RCE through improper file-extension sanitization (affecting < 2024.07.01)
+   - Fixed: Command injection when using `%q` in `--exec` on Windows (affecting >= 2021.04.11, < 2024.04.09)
 
 ## API Credentials Note
 The code uses hardcoded public test API credentials (API_ID and API_HASH). These are:

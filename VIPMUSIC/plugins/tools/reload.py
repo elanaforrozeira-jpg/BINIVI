@@ -13,7 +13,7 @@ from pyrogram import filters
 load_dotenv()
 
 from VIPMUSIC import app
-from VIPMUSIC.core.call import VIP
+from VIPMUSIC.core.call import Vivek
 from VIPMUSIC.misc import db
 from VIPMUSIC.utils.database import get_assistant, get_authuser_names, get_cmode
 from VIPMUSIC.utils.decorators import ActualAdminCB, AdminActual, language

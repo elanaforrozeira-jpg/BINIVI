@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from VIPMUSIC import Carbon, YouTube, app
-from VIPMUSIC.core.call import VIP
+from VIPMUSIC.core.call import Vivek
 from VIPMUSIC.misc import db
 from VIPMUSIC.utils.database import add_active_video_chat, is_active_chat
 from VIPMUSIC.utils.exceptions import AssistantErr

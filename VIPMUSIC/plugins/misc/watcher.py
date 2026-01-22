@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from VIPMUSIC import app
-from VIPMUSIC.core.call import VIP
+from VIPMUSIC.core.call import Vivek
 
 welcome = 20
 close = 30

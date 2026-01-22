@@ -1,4 +1,4 @@
-from VIPMUSIC.core.bot import VIP
+from VIPMUSIC.core.bot import Vivek
 from VIPMUSIC.core.dir import dirr
 from VIPMUSIC.core.git import git
 from VIPMUSIC.core.userbot import Userbot
@@ -14,7 +14,7 @@ git()
 dbb()
 heroku()
 
-app = VIP()
+app = Vivek()
 api = SafoneAPI()
 userbot = Userbot()
 
@@ -29,4 +29,4 @@ Resso = RessoAPI()
 Telegram = TeleAPI()
 YouTube = YouTubeAPI()
 
-telethn = TelegramClient("VIPMUSIC", API_ID, API_HASH)
+telethn = TelegramClient("VIVEKMUSIC", API_ID, API_HASH)

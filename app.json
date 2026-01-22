@@ -1,12 +1,12 @@
 {
-    "name": "🌹⃝𖣔𝐕𝐈𝐏 𝐌𝐔𝐒𝐈𝐂🥀⛦⃕‌🇮🇳",
-    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+    "name": "🎵 VIVEK MUSIC 🎵",
+    "description": "A Telegram Music Player Bot by Vivek, written in Python with Pyrogram and Py-Tgcalls.",
     "logo": "https://te.legra.ph/file/3a131483d8a27dbf41b3a.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "VIP",
+    "VIVEK",
     "MusicBot",
     "telegram-bot",
     "pyrogram"
@@ -38,7 +38,7 @@
         "required": true
       },
       "STRING_SESSION": {
-        "description": "𝐅𝐈𝐋𝐋 𝐇𝐄𝐑𝐄 𝐀  𝐏𝐘𝐑𝐎𝐆𝐑𝐀𝐌 V2 𝐒𝐓𝐑𝐈𝐍𝐆 𝐒𝐄𝐒𝐒𝐈𝐎𝐍, 𝐈𝐅 𝐄𝐑𝐑𝐎𝐑 𝐓𝐇𝐄𝐍 𝐒𝐄𝐍𝐃 𝐄𝐑𝐑𝐎𝐑 𝐒𝐒 𝐓𝐎 𝐑𝐄𝐏𝐎 𝐎𝐖𝐍𝐄𝐑.( 𝐆𝐄𝐓 𝐅𝐑𝐎𝐌 = t.me/VIP_STRING_ROBOT ) . ",
+        "description": "𝐅𝐈𝐋𝐋 𝐇𝐄𝐑𝐄 𝐀  𝐏𝐘𝐑𝐎𝐆𝐑𝐀𝐌 V2 𝐒𝐓𝐑𝐈𝐍𝐆 𝐒𝐄𝐒𝐒𝐈𝐎𝐍, 𝐈𝐅 𝐄𝐑𝐑𝐎𝐑 𝐓𝐇𝐄𝐍 𝐒𝐄𝐍𝐃 𝐄𝐑𝐑𝐎𝐑 𝐒𝐒 𝐓𝐎 𝐑𝐄𝐏𝐎 𝐎𝐖𝐍𝐄𝐑.( 𝐆𝐄𝐓 𝐅𝐑𝐎𝐌 = t.me/StringSessionBot ) . ",
         "value": "",
         "required": true
       },

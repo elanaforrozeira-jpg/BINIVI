@@ -12,65 +12,65 @@
     "pyrogram"
     ],
     "env": {
-      "API_ID": {
-        "description": "𝐆𝐄𝐓 𝐀𝐏𝐈 𝐈𝐃 𝐅𝐑𝐎𝐌 https://my.telegram.org",
-        "value": "14050586",
-        "required": true
-      },
-      "API_HASH": {
-        "description": "𝐆𝐄𝐓 𝐀𝐏𝐈 𝐇𝐀𝐒𝐇 𝐅𝐑𝐎𝐌 https://my.telegram.org",
-        "value": "42a60d9c657b106370c79bb0a8ac560c",
-        "required": true
-      },
       "BOT_TOKEN": {
-        "description": "𝐆𝐄𝐓 𝐁𝐎𝐓 𝐓𝐎𝐊𝐄𝐍 𝐅𝐑𝐎𝐌 𝐁𝐎𝐓 𝐅𝐀𝐓𝐇𝐄𝐑",
+        "description": "Get from @BotFather on Telegram",
         "value": "",
-        "required": true
-      },
-      "MONGO_DB_URI": {
-        "description": "𝐆𝐄𝐓 𝐀 𝐌𝐎𝐍𝐆𝐎𝐃𝐁 𝐔𝐑𝐋 𝐅𝐑𝐎𝐌 https://cloud.mongodb.com. 𝐈𝐅 𝐘𝐎𝐔 𝐃𝐎𝐍𝐓 𝐇𝐀𝐕𝐄 𝐓𝐇𝐄𝐍 𝐔𝐒𝐄 𝐀𝐋𝐑𝐄𝐀𝐃𝐘 𝐅𝐈𝐋𝐋𝐄𝐃 𝐌𝐎𝐍𝐆𝐎.",
-        "value": "mongodb+srv://Krishna:pss968048@cluster0.4rfuzro.mongodb.net/?retryWrites=true&w=majority",
         "required": true
       },
       "OWNER_ID": {
-        "description": "𝐅𝐈𝐋𝐋 𝐇𝐄𝐑𝐄 𝐎𝐖𝐍𝐄𝐑 𝐈𝐃, 𝐔 𝐂𝐀𝐍 𝐔𝐒𝐄 𝐌𝐎𝐑𝐄 𝐏𝐄𝐑𝐒𝐎𝐍 𝐈𝐃 𝐁𝐘 𝐆𝐈𝐕𝐄𝐈𝐍𝐆 𝐒𝐏𝐀𝐂𝐄 𝐀𝐅𝐓𝐄𝐑 𝐎𝐍𝐄 𝐈𝐃.",
-        "value": "1808943146",
-        "required": true
-      },
-      "STRING_SESSION": {
-        "description": "𝐅𝐈𝐋𝐋 𝐇𝐄𝐑𝐄 𝐀  𝐏𝐘𝐑𝐎𝐆𝐑𝐀𝐌 V2 𝐒𝐓𝐑𝐈𝐍𝐆 𝐒𝐄𝐒𝐒𝐈𝐎𝐍, 𝐈𝐅 𝐄𝐑𝐑𝐎𝐑 𝐓𝐇𝐄𝐍 𝐒𝐄𝐍𝐃 𝐄𝐑𝐑𝐎𝐑 𝐒𝐒 𝐓𝐎 𝐑𝐄𝐏𝐎 𝐎𝐖𝐍𝐄𝐑.( 𝐆𝐄𝐓 𝐅𝐑𝐎𝐌 = t.me/StringSessionBot ) . ",
+        "description": "Your Telegram ID from @userinfobot",
         "value": "",
         "required": true
       },
+      "API_ID": {
+        "description": "Optional: Default provided (Get from https://my.telegram.org)",
+        "value": "27829712",
+        "required": false
+      },
+      "API_HASH": {
+        "description": "Optional: Default provided (Get from https://my.telegram.org)",
+        "value": "b0b1b3b5b7b9bbbdbfc1c3c5c7c9cbcd",
+        "required": false
+      },
+      "MONGO_DB_URI": {
+        "description": "Optional: For saving data. Get from cloud.mongodb.com",
+        "value": "",
+        "required": false
+      },
+      "STRING_SESSION": {
+        "description": "Optional: For Voice Chat music. Get from @StringSessionBot",
+        "value": "",
+        "required": false
+      },
+      "LOGGER_ID": {
+        "description": "Optional: Uses OWNER_ID if not set (Group ID for logs, must start with -100)",
+        "value": "",
+        "required": false
+      },
       "HEROKU_API_KEY": {
-        "description": "𝐅𝐈𝐋𝐋 𝐇𝐄𝐑𝐄 𝐘𝐎𝐔𝐑 𝐇𝐄𝐑𝐎𝐊𝐔 𝐀𝐂𝐂. 𝐀𝐏𝐈 𝐊𝐄𝐘, 𝐈𝐅 𝐃𝐎𝐍𝐓 𝐊𝐍𝐎𝐖 𝐓𝐇𝐈𝐒 𝐓𝐇𝐄𝐍 𝐋𝐄𝐀𝐕𝐄 𝐓𝐇𝐈𝐒 𝐋𝐈𝐍𝐄 𝐁𝐋𝐀𝐍𝐊",
+        "description": "Optional: Fill here your Heroku account API key (Leave blank if not needed)",
         "value": "",
         "required": false
       },
       "HEROKU_APP_NAME": {
-        "description": "𝐅𝐈𝐋𝐋 𝐇𝐄𝐑𝐄 𝐘𝐎𝐔𝐑 𝐀𝐏𝐏 𝐍𝐀𝐌𝐄 𝐖𝐇𝐈𝐂𝐇 𝐅𝐈𝐋𝐋𝐄𝐃 𝐈𝐍 𝐘𝐎𝐈𝐑 𝐅𝐈𝐑𝐒𝐓 𝐋𝐈𝐍𝐄 (𝐀𝐏𝐏 𝐍𝐀𝐌𝐄).",
+        "description": "Optional: Fill here your app name (Same as first line app name)",
         "value": "",
         "required": false
       },
       "AUTO_GCAST": {
-        "description": "𝐅𝐈𝐋𝐋 𝐇𝐄𝐑𝐄 [True] 𝐅𝐎𝐑 𝐎𝐍 𝐀𝐔𝐓𝐎 𝐆𝐂𝐀𝐒𝐓/𝐁𝐑𝐎𝐀𝐃𝐂𝐀𝐒𝐓 𝐌𝐄𝐒𝐒𝐀𝐆𝐄, (Leave Blank This Field & skip To Disbale Auto Gcast/Broadcast.)",
-        "value": "True",
+        "description": "Optional: Fill [True] for ON auto gcast/broadcast message (Leave blank to disable)",
+        "value": "False",
         "required": false
       },
       "AUTO_GCAST_MSG": {
-        "description": "𝐅𝐈𝐋𝐋 𝐇𝐄𝐑𝐄 𝐀𝐔𝐓𝐎 𝐁𝐑𝐎𝐀𝐃𝐂𝐀𝐒𝐓 𝐌𝐄𝐒𝐒𝐀𝐆𝐄 𝐖𝐇𝐈𝐂𝐇 𝐖𝐈𝐋𝐋 𝐁𝐄 𝐀𝐔𝐓𝐎 𝐁𝐑𝐎𝐀𝐃𝐂𝐀𝐒𝐓𝐄𝐃 𝐓𝐖𝐈𝐂𝐄 𝐈𝐍 𝐀 𝐃𝐀𝐘. ( 𝐀𝐍𝐘 𝐓𝐘𝐏𝐄 𝐎𝐅 𝐌𝐄𝐒𝐒𝐀𝐆𝐄 𝐘𝐎𝐔 𝐂𝐀𝐍 𝐂𝐎𝐏𝐘 𝐀𝐍𝐃 𝐏𝐀𝐒𝐓𝐄 𝐇𝐄𝐑𝐄 )",
+        "description": "Optional: Auto broadcast message which will be auto broadcasted twice in a day",
         "value": "",
         "required": false
       },
       "START_IMG_URL": {
-        "description": "𝐅𝐈𝐋𝐋 𝐇𝐄𝐑𝐄 𝐘𝐎𝐔𝐑 𝐒𝐓𝐀𝐑𝐓 𝐁𝐎𝐓 𝐈𝐌𝐀𝐆𝐄 𝐔𝐑𝐋, 𝐆𝐄𝐓 𝐈𝐓 𝐅𝐑𝐎𝐌 ;- t.me/vTelegraphBot",
-        "value": "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg",
+        "description": "Optional: Your start bot image URL (Get it from t.me/vTelegraphBot)",
+        "value": "https://telegra.ph/file/89fce177916645cf09b52.jpg",
         "required": false
-      },
-      "LOGGER_ID": {
-        "description": "𝐅𝐈𝐋𝐋 𝐇𝐄𝐑𝐄 𝐋𝐎𝐆 𝐆𝐑𝐎𝐔𝐏 𝐈𝐃 𝐖𝐇𝐄𝐑𝐄 𝐘𝐎𝐔𝐑 𝐁𝐎𝐓 𝐀𝐋𝐖𝐀𝐘𝐒 𝐒𝐓𝐀𝐘 𝐀𝐃𝐌𝐈𝐍 (𝐈𝐃 𝐌𝐔𝐒𝐓 𝐒𝐓𝐀𝐑𝐓𝐄𝐃 𝐖𝐈𝐓𝐇 -100).",
-        "value": "",
-        "required": true
       }
     },
     "buildpacks": [

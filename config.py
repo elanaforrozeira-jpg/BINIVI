@@ -138,3 +138,10 @@ if SUPPORT_CHANNEL:
 if SUPPORT_CHAT:
     if not re.match("(?:http|https)://", SUPPORT_CHAT):
         SUPPORT_CHAT = "https://t.me/VivekMusicChat"
+
+# Validate required variables
+if not BOT_TOKEN:
+    raise ValueError("BOT_TOKEN is required! Get it from @BotFather on Telegram.")
+
+if OWNER_ID == 0:
+    raise ValueError("OWNER_ID is required! Get your Telegram ID from @userinfobot.")

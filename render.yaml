@@ -1,0 +1,10 @@
+services:
+  - type: worker
+    name: vivek-music-bot
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: OWNER_ID
+        sync: false

@@ -3,6 +3,16 @@ from pyrogram.types import Message
 from config import BOT_NAME
 import yt_dlp
 import os
+import re
+
+def sanitize_filename(filename):
+    """Sanitize filename to prevent directory traversal attacks"""
+    # Remove path separators and parent directory references
+    filename = re.sub(r'[/\\]', '_', filename)
+    filename = re.sub(r'\.\.', '', filename)
+    # Remove any other potentially dangerous characters
+    filename = re.sub(r'[^\w\s\-.]', '_', filename)
+    return filename
 
 @Client.on_message(filters.command(["play", "p"]))
 async def play_command(client, message: Message):
@@ -18,10 +28,11 @@ async def play_command(client, message: Message):
     query = " ".join(message.command[1:])
     status_msg = await message.reply(f"🔍 Searching for **{query}**...")
     
+    file_path = None
     try:
         ydl_opts = {
             'format': 'bestaudio/best',
-            'outtmpl': 'downloads/%(title)s.%(ext)s',
+            'outtmpl': 'downloads/%(id)s.%(ext)s',  # Use video ID instead of title
             'noplaylist': True,
             'quiet': True,
             'postprocessors': [{
@@ -39,7 +50,8 @@ async def play_command(client, message: Message):
             title = info.get('title', 'Unknown')
             duration = info.get('duration', 0)
             thumb = info.get('thumbnail', '')
-            file_path = ydl.prepare_filename(info).replace('.webm', '.mp3').replace('.m4a', '.mp3')
+            video_id = info.get('id', 'audio')
+            file_path = f"downloads/{video_id}.mp3"
         
         await status_msg.edit("📤 Uploading audio...")
         
@@ -51,10 +63,13 @@ async def play_command(client, message: Message):
         )
         
         await status_msg.delete()
-        
-        # Cleanup
-        if os.path.exists(file_path):
-            os.remove(file_path)
             
     except Exception as e:
         await status_msg.edit(f"❌ Error: {str(e)}")
+    finally:
+        # Cleanup - ensure file is deleted even if an error occurs
+        if file_path and os.path.exists(file_path):
+            try:
+                os.remove(file_path)
+            except:
+                pass

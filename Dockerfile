@@ -8,4 +8,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+# Expose port for Render health check
+EXPOSE 8080
+
 CMD ["python", "bot.py"]

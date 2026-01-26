@@ -19,15 +19,15 @@ OWNER_ID = int(os.getenv("OWNER_ID", "0"))
 #              DEFAULT VALUES - DON'T CHANGE!
 # ═══════════════════════════════════════════════════════════
 
-# Telegram API Credentials (Public Test Credentials - Works!)
-# NOTE: These are intentionally hardcoded public test credentials.
+# Telegram API Credentials (REQUIRED)
+# NOTE: You MUST get your own API_ID and API_HASH from my.telegram.org
 # They are safe to use for bots and eliminate the need for users
 # to obtain their own API_ID and API_HASH from my.telegram.org
-API_ID = 27829712
-API_HASH = "fb590fb04369d740e742a0198aa66e0a"
+API_ID = int(os.getenv("API_ID", "27829712"))
+API_HASH = os.getenv("API_HASH", "fb590fb04369d740e742a0198aa66e0a")
 
 # Bot Info
-BOT_NAME = "🎵 VIVEK MUSIC"
+BOT_NAME = os.getenv("BOT_NAME", "🎵 VIVEK MUSIC")
 BOT_USERNAME = ""  # Will be set automatically
 
 # Port for Render
